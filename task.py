@@ -142,7 +142,7 @@ if __name__ == "__main__":
     captcha_url = "https://parivahan.gov.in/rcdlstatus/DispplayCaptcha?txtp_cd=1&bkgp_cd=2&noise_cd=2&gimp_cd=3&txtp_length=5&pfdrid_c=true?-1207445462&pfdrid_c=true"
     data_url = "https://parivahan.gov.in/rcdlstatus/?pur_cd=101"
     scraper = RCDLScraper(captcha_url, data_url)
-    dl_number = input("Please input DL number: ")
+    dl_number = input("Please input DL number(XXXX XXXXXXXXXXX): ")
     dob = input("Please input DOB (DD-MM-YYYY): ")
     scraped_data = scraper.scrape_data(dl_number, dob)
     print(scraped_data)
